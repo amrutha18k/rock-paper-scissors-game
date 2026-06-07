@@ -18,6 +18,10 @@
   height:120px;
   margin-right:10px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.mov:hover{
+  transform: scale(1.102);
 }
 .res{
   font-size: 25px;
@@ -30,4 +34,47 @@
   padding:10px;
   font-size: 20px;
   border-radius: 15px;
+  cursor:pointer;
+  transition: 0.3s;
+}
+.rst-score:hover{
+  transform: scale(1.102);
+}
+@media (max-width: 600px){
+
+  .title{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .buttons{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mov{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+  }
+
+  .mov-icon{
+    height: 55px;
+  }
+
+  .res{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .score{
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .rst-score{
+    font-size: 18px;
+    padding: 12px 18px;
+  }
+
 }
