@@ -18,6 +18,10 @@
   height:120px;
   margin-right:10px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.mov:hover{
+  transform: scale(0.1);
 }
 .res{
   font-size: 25px;
@@ -34,7 +38,7 @@
 @media (max-width: 600px){
 
   .title{
-    font-size: 24px;
+    font-size: 38px;
     text-align: center;
   }
 
@@ -44,28 +48,28 @@
   }
 
   .mov{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 15px;
   }
 
   .mov-icon{
-    height: 40px;
+    height: 55px;
   }
 
   .res{
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
   }
 
   .score{
     text-align: center;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .rst-score{
-    font-size: 16px;
-    padding: 8px;
+    font-size: 18px;
+    padding: 12px 18px;
   }
 
 }
