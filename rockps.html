@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps-gen.css">
+    <link rel="stylesheet" href="rps-css.css">
+  </head>
+  <body>
+    <p class="title">
+      Rock Paper scissors
+    </p>
+    <div class="buttons">
+      <button class="mov" onclick="
+        pickCmpMov();
+        playGame('rock');
+      ">
+      <img src="rpsemoj/rock-emoji.png" class="mov-icon"></button>
+
+      <button class="mov" onclick="
+        pickCmpMov();
+        playGame('paper');
+      ">
+      <img src="rpsemoj/paper-emoji.png" class="mov-icon"></button>
+
+      <button class="mov" onclick="
+        pickCmpMov();
+        playGame('scissors');
+      ">
+      <img src="rpsemoj/scissors-emoji.png" class="mov-icon"></button>
+    </div>
+
+    <p class="js-res res"></p>
+    <p class="js-mov"></p>
+    <p class="js-score score"> </p>
+
+    <button class="rst-score" onclick="
+      score.losses=0;
+      score.ties=0;
+      score.wins=0;
+      localStorage.removeItem('score');
+      updateScoreElm();
+      alert('score has been reset.');
+    ">Reset Score</button>
+
+    <script src="rps-js.js"></script>
+    </body>
+</html>
+

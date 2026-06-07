@@ -1,0 +1,33 @@
+.title{
+  font-size:30px;
+  font-weight: bold;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.mov-icon{
+  height: 50px;
+}
+.mov{
+  border-radius: 70px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  width:120px;
+  height:120px;
+  margin-right:10px;
+  cursor: pointer;
+}
+.res{
+  font-size: 25px;
+  font-weight: bold;
+}
+.score{
+  margin-top: 30px;
+}
+.rst-score{
+  padding:10px;
+  font-size: 20px;
+  border-radius: 15px;
+}
