@@ -31,3 +31,41 @@
   font-size: 20px;
   border-radius: 15px;
 }
+@media (max-width: 600px){
+
+  .title{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .buttons{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mov{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .mov-icon{
+    height: 40px;
+  }
+
+  .res{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .score{
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .rst-score{
+    font-size: 16px;
+    padding: 8px;
+  }
+
+}
