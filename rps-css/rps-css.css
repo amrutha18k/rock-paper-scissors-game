@@ -78,3 +78,18 @@
   }
 
 }
+.auto-msg{
+  display:none;
+  position:fixed;
+}
+.js-auto-msg{
+  display: block;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  color:aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+

@@ -40,12 +40,25 @@
           playGame(playerMov);
         },1000);
         isAutoPlaying=true;
+        let msg=document.querySelector('.auto-msg');
+        msg.classList.add('js-auto-msg');
+        msg.innerHTML='autoplay started.';
+        setTimeout(function(){
+          msg.innerHTML='';
+          msg.classList.remove('js-auto-msg');
+          },2000);
       }
       else{
         clearInterval(intId);
         isAutoPlaying=false;
-      }
-      
+        let msg=document.querySelector('.auto-msg');
+        msg.classList.add('js-auto-msg');
+        msg.innerHTML='autoplay stopped.';
+        setTimeout(function(){
+          msg.innerHTML='';
+          msg.classList.remove('js-auto-msg');
+          },2000);
+      }   
   }
 
   function playGame(playerMov){

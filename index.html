@@ -40,12 +40,20 @@
       score.wins=0;
       localStorage.removeItem('score');
       updateScoreElm();
-      alert('score has been reset.');
+      let msg=document.querySelector('.auto-msg');
+      msg.classList.add('js-auto-msg');
+      msg.innerHTML='score has been reset.';
+      setTimeout(function(){
+        msg.innerHTML='';
+        msg.classList.remove('js-auto-msg');
+        },2000);
     ">Reset Score</button>
 
     <button class="rst-score" onclick="
       autoPlay();
     ">Auto play</button>
+
+    <p class="auto-msg"></p>
 
     <script src="rps-js/rps-js.js"></script>
     </body>
