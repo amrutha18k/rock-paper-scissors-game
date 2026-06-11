@@ -43,7 +43,7 @@
       let msg=document.querySelector('.auto-msg');
       msg.classList.add('js-auto-msg');
       msg.innerHTML='score has been reset.';
-      setTimeout(function(){
+      setTimeout(()=>{
         msg.innerHTML='';
         msg.classList.remove('js-auto-msg');
         },2000);
