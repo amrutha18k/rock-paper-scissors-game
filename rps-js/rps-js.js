@@ -17,8 +17,9 @@
     just another way
   */
 
-  let cmpMov=' ';
+ 
   function pickCmpMov(){
+    let cmpMov=' ';
     const randNum = Math.random();
     if(randNum>=0&&randNum<1/3){
       cmpMov='rock';
@@ -27,10 +28,29 @@
     }else{ 
       cmpMov='scissors';
     }
+    return cmpMov;
   }
+
+  let isAutoPlaying=false;
+  let intId;
+  function autoPlay(){
+      if(!isAutoPlaying){
+        intId= setInterval(function(){
+        const playerMov=pickCmpMov();
+          playGame(playerMov);
+        },1000);
+        isAutoPlaying=true;
+      }
+      else{
+        clearInterval(intId);
+        isAutoPlaying=false;
+      }
+      
+  }
+
   function playGame(playerMov){
   let res=' ';
-  
+  let cmpMov= pickCmpMov();
   if(playerMov=='paper'){
       if(cmpMov==='rock'){
       res='you win';
